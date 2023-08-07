@@ -71,13 +71,14 @@ header {
 }
 .btn1 {
   display: flex;
+  flex-wrap: nowrap;
   align-items: center;
   gap: 16px;
   padding: 16px;
-  font-weight: 600;
+  /* font-weight: 600; */
   border: none;
   border-radius: 6px;
-  background: var(--blue);
+  background: #41b9ff;
   color: white;
   cursor: pointer;
 }
@@ -284,7 +285,7 @@ header {
   justify-content: space-evenly;
   max-width: 80%;
   margin: auto;
-  margin-top: 128px;
+  margin-top: 7em;
   margin-bottom: 32px;
 }
 .platform {
@@ -328,8 +329,10 @@ header {
 .subscribe-btn {
   padding: 13px;
   border-radius: 0 4px 4px 0;
-  border: 1px solid var(--blue);
+  /* border: 1px solid var(--blue); */
+  border: none;
   color: var(--white);
+  background-color: #4287f5;
   cursor: pointer;
 }
 .subscribe-btn:hover {
@@ -349,26 +352,28 @@ header {
   padding-bottom: 128px;
 }
 .pricing-details h2 {
-  padding-bottom: 16px;
-  font-size: 40px;
+  padding-bottom: 10%;
+  font-size: 200%;
   color: var(--dark-blue);
 }
 .pricing-details p {
   color: var(--light-gray);
-  font-size: 16px;
+  font-size: 100%;
 }
 
 .price-cards {
   display: flex;
-  max-width: 90%;
+  min-width: 90%;
   margin: auto;
+  height: fit-content;
+  width: fit-content;
 }
 .price-card {
   background: var(--white);
   border: 1px solid var(--blue);
   border-radius: 9px;
-  padding: 48px;
-  height: 600px;
+  padding: 10%;
+  height: 50%;
 }
 .pricing-features {
   display: flex;
@@ -462,7 +467,7 @@ header {
 
 .branches {
   background: var(--dark-blue);
-  padding: 64px;
+  padding: 20%;
   height: 120vh;
 }
 .wrapper {
@@ -656,4 +661,93 @@ footer {
 }
 .social-media-icon:hover {
   color: #41b9ff;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;900&display=swap");
+
+/* Your existing CSS code here */
+
+/* Media Queries for different screen sizes */
+
+/* Extra Small (XS) Devices (Mobile Phones - Portrait) */
+@media (max-width: 575.98px) and (max-width: 991.98px) {
+  /* Add specific styles for extra small devices (mobile phones - portrait) */
+  .nav-links {
+    display: none !important;
+  }
+  .hero-title {
+    font-size: 20px;
+  }
+  .hero-description {
+    width: 80%;
+    font-size: 50%;
+  }
+  .cards,
+  .offer-container,
+  .testimonial-cards,
+  .platforms {
+    flex-direction: column;
+  }
+  .hero-action {
+    flex-wrap: wrap;
+  }
+  .subscribe {
+    flex-wrap: wrap;
+    padding: 10% 5%;
+  }
+  .price-cards {
+    flex-wrap: wrap;
+  }
+
+  .card-dark {
+    top: 20%;
+    margin: 10% 0 10% 0;
+  }
+  .branches {
+    width: 100%;
+  }
+  .branches-title {
+    text-align: center !important;
+    font-size: 200%;
+  }
+  .wrapper {
+    flex-wrap: wrap;
+  }
+  .form-container {
+    flex-wrap: wrap;
+    width: 100px;
+  }
+}
+
+.platform {
+  width: 20%;
+  padding: 10px;
+}
+
+/* Large (LG) Devices (Laptops and Desktops - HD Screens) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* Add specific styles for large devices (laptops and desktops - HD screens) */
+  .hero-title {
+    font-size: 56px;
+  }
+  .hero-description {
+    width: 50%;
+  }
+  .cards {
+    max-width: 80%;
+  }
+}
+
+/* Extra Large (XL) Devices (Large Desktops) */
+@media (min-width: 1200px) {
+  /* Add specific styles for extra large devices (large desktops) */
+  .hero-title {
+    font-size: 64px;
+  }
+  .hero-description {
+    width: 40%;
+  }
+  .cards {
+    max-width: 70%;
+  }
 }
