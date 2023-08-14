@@ -724,30 +724,3 @@ footer {
   padding: 10px;
 }
 
-/* Large (LG) Devices (Laptops and Desktops - HD Screens) */
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  /* Add specific styles for large devices (laptops and desktops - HD screens) */
-  .hero-title {
-    font-size: 56px;
-  }
-  .hero-description {
-    width: 50%;
-  }
-  .cards {
-    max-width: 80%;
-  }
-}
-
-/* Extra Large (XL) Devices (Large Desktops) */
-@media (min-width: 1200px) {
-  /* Add specific styles for extra large devices (large desktops) */
-  .hero-title {
-    font-size: 64px;
-  }
-  .hero-description {
-    width: 40%;
-  }
-  .cards {
-    max-width: 70%;
-  }
-}
