@@ -71,11 +71,10 @@ header {
 }
 .btn1 {
   display: flex;
-  flex-wrap: nowrap;
   align-items: center;
   gap: 16px;
   padding: 16px;
-  /* font-weight: 600; */
+ font-weight: 600;
   border: none;
   border-radius: 6px;
   background: #41b9ff;
@@ -467,7 +466,7 @@ header {
 
 .branches {
   background: var(--dark-blue);
-  padding: 20%;
+  padding: 64px;
   height: 120vh;
 }
 .wrapper {
@@ -663,13 +662,8 @@ footer {
   color: #41b9ff;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;900&display=swap");
 
-/* Your existing CSS code here */
 
-/* Media Queries for different screen sizes */
-
-/* Extra Small (XS) Devices (Mobile Phones - Portrait) */
 @media (max-width: 575.98px) and (max-width: 991.98px) {
   /* Add specific styles for extra small devices (mobile phones - portrait) */
   .nav-links {
